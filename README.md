@@ -28,18 +28,18 @@
    They are received from above component and immutable as far as the Component receiving them is concerned.
    A Component cannot change its props, but it is responsible for putting together the props of its child Components.
    Props do not have to just be data — callback functions may be passed in as props
-9) **What are controlled components?**\ 
+9) **What are controlled components?**\
    - A Controlled Component is one that takes its current value through props and notifies changes through callbacks like onChange. 
      A parent component "controls" it by handling the callback and managing its own state and passing the new values as props to the controlled component. 
      You could also call this a "dumb component"
    - A Uncontrolled Component is one that stores its own state internally, and you query the DOM using a ref to find its current value when you need it. 
      This is a bit more like traditional HTML.
-10) **What is a higher order component?**\  
+10) **What is a higher order component**\
       A higher-order component (HOC) is an advanced technique in React for reusing component logic. 
       They are a pattern that emerges from React's compositional nature. 
       Concretely, a higher-order component is a function that takes a component and returns a new component.
-11) **What is Redux?**\  
+11)  **What is Redux**\
        the entire application state is kept in a single store. The store is simply a javascript object. 
        The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. 
        The entire state transition is kept inside reducers and should not have any side-effects.
-       Redux is based on the idea that there should be only a single source of truth
+       Redux is based on the idea that there should be only a single source of truth.
