@@ -75,9 +75,44 @@
        A callback function which will be invoked when setState has finished and the component is re-rendered.
 20)  **What is the difference between React Native and React?**\
        React Native is an entire platform allowing you to build native, cross-platform mobile apps, and React. js is a JavaScript library you use for constructing a high
-       performing UI layer. ... Like the browser code in React is rendered through Virtual DOM while React Native uses Native API's to render components on mobile
+       performing UI layer. ... Like the browser code in React is rendered through Virtual DOM while React Native uses Native API's to render components on mobile.
+21)  **Can web browsers read JSX directly?**\
+       Web browsers cannot read JSX directly. This is because they are built to only read regular JS objects and JSX is not a regular JavaScript object 
+       For a web browser to read a JSX file, the file needs to be transformed into a regular JavaScript object. For this, we use Babel.
+22)  **Why is there a need for using keys in Lists?**\
+       Keys are very important in lists for the following reasons:
+       - A key is a unique identifier and it is used to identify which items have changed, been updated or deleted from the lists
+       - It also helps to determine which components need to be re-rendered instead of re-rendering all the components every time. Therefore, it increases performance, as
+         only the updated components are re-rendered.
+23)  **What is React Router?**\
+      React Router is a routing library built on top of React, which is used to create routes in a React application. 
+24)  **What is the Flux?**\
+      Flux is the application architecture that Facebook uses for building web applications. It is a method of handling complex data inside a client-side application and
+      manages how data flows in a React application.
+      There is a single source of data (the store) and triggering certain actions is the only way way to update them.The actions call the dispatcher, and then the store is
+      triggered and updated with their own data accordingly.
+      When a dispatch has been triggered, and the store updates, it will emit a change event that the views can rerender accordingly.
+ 25) **Question: Explain various lifecycle methods of React components.**\
+      - componentDidMount() – Executes on the client side after the first render
+      - componentDidUpdate() – Called immediately after rendering takes place in the DOM
+      - componentWillMount() – Executes immediately before rendering starts on both the client-side and the server-side
+      - componentWillReceiveProps() – Invokes when props are received from the parent class and before another render is called
+      - componentWillUnmount() – Used to clear up the memory space. Called right after the component is unmounted from the DOM
+      - componentWillUpdate() – Called immediately before rendering takes place in the DOM
+      - shouldComponentUpdate() – Returns either true or false. Though false by default, needs to be set to return true if the component needs to be updated
+  26) **Can parent component change value in States and Props?**\
+       The parent component can change the value in Props but not in the state.
+  27) **Can changes be made inside the component?**\
+       The changes can be made inside the state but not in Props.
+      
+    
+Question: Can we make changes inside child components?
+Answer: Yes, we can make changes inside the child component in Props but not in the case of States.
        
        
        Sources: https://medium.com/@vigowebs/frequently-asked-react-js-interview-questions-and-answers-36f3dd99f486
+                https://www.simplilearn.com/reactjs-interview-questions-and-answers-article
+                https://hackr.io/blog/react-interview-questions
+                
 
 
