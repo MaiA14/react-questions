@@ -28,7 +28,7 @@
    They are received from above component and immutable as far as the Component receiving them is concerned.
    A Component cannot change its props, but it is responsible for putting together the props of its child Components.
    Props do not have to just be data — callback functions may be passed in as props
-9) **What are controlled components?**\
+9) **What are controlled components**\
    - A Controlled Component is one that takes its current value through props and notifies changes through callbacks like onChange. 
      A parent component "controls" it by handling the callback and managing its own state and passing the new values as props to the controlled component. 
      You could also call this a "dumb component"
