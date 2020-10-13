@@ -1,4 +1,4 @@
-# react-questions
+# React questions
 
 1) **How React works? How Virtual-DOM works in React?**\
    React uses virtual DOM to enhance its performance. It uses the observable to detect state and prop changes. 
