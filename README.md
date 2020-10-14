@@ -98,10 +98,6 @@
        The parent component can change the value in Props but not in the state.
   25) **Can changes be made inside the component?**\
        The changes can be made inside the state but not in Props.
-      
-    
-Question: Can we make changes inside child components?
-Answer: Yes, we can make changes inside the child component in Props but not in the case of States.
        
        
        Sources: https://medium.com/@vigowebs/frequently-asked-react-js-interview-questions-and-answers-36f3dd99f486
